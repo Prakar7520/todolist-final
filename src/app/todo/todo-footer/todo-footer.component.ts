@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TodosService } from 'src/app/todos.service';
 
 @Component({
   selector: 'app-todo-footer',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoFooterComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private tdd:TodosService) { }
+  list=[]
   ngOnInit() {
+    this.list=this.tdd.getlist();
   }
 
 }
