@@ -1,5 +1,28 @@
-<mat-toolbar color="primary">My App</mat-toolbar>
-
+<mat-toolbar color="primary">
+        <button mat-icon-button [matMenuTriggerFor]="menu1" aria-label="Example icon-button with a menu">
+                                <mat-icon>more_vert</mat-icon>
+                        </button>
+                        <mat-menu #menu1="matMenu">
+                        <button mat-menu-item>
+                                <mat-icon>done</mat-icon>
+                                <span>Todo list</span>
+                        </button>
+                        <button mat-menu-item (click)="dele()">
+                                <mat-icon>restore</mat-icon>
+                                <span>reset list</span>
+                        </button>
+                        <button mat-menu-item>
+                                <mat-icon>textsms</mat-icon>
+                                <span>About</span>
+                        </button>
+                        </mat-menu> 
+                               
+        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+        <mat-menu #menu="matMenu">
+                <button mat-menu-item>Item 1</button>
+                <button mat-menu-item>Item 2</button>
+        </mat-menu>      
+</mat-toolbar>
 
 
 <div class="c1">

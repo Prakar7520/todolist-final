@@ -1,2 +1,4 @@
-<input type="text" name="list" placeholder="Enter ur todo-list" class="text1" [(ngModel)]="item">
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="Your Todo item:" [(ngModel)]="item">
+</mat-form-field>
 <button mat-raised-button (click)="submit()">Click</button>
