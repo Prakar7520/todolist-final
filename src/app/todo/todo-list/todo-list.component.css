@@ -4,6 +4,7 @@ ul{
     color: gray;
     margin-left: -40px;
     margin-bottom: 0px;
+    height:40px;
 }
 li{
     text-align: center;
@@ -11,10 +12,14 @@ li{
     background-color: #d7d7d7;
     padding: 10px 0px;
     margin-bottom: 5px;
+    height:20px;
 }
 span{
     cursor: pointer;
     position: relative;
     float:right;
     margin-right: 10px;
+}
+ul li:hover{
+    background:darkgray;
 }

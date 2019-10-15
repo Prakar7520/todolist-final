@@ -1,3 +1,4 @@
 <ul>
-    <li *ngFor="let i of list">{{i}}</li>
+    <li *ngFor="let i of list; let ind=index">{{i}} <span (click)="remov(ind)">-</span></li>
+    
 </ul>
